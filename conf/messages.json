@@ -1,0 +1,59 @@
+{
+    "info_messages": {
+        "welcome_message": "Welcome to ITMO Comp Math lab#1! \n Author: @melon_egoist \n Variant: 6 \n Professor: Rybakov Stepan Dmitrievich\n",
+        "info_commands_message": "Type /help for command list!\n",
+        "instruction_message": "<b>Here You can see little instruction, how to use this bot:</b>\n\n\t0. Check /input_format rules!\n\t1. Use /set_file to download your file(optional)\n\t2. Use /set_n to set N value\n\t3. Use /set_matrix to set matrix in bot\n\t4. Use /set_accuracy to set calculating accuracy\n\t5. Use /calculate to use function\n",
+        "help_message": "<b>Here is the complete command list:</b>\n\n\t/start - check credits, bot info and instruction of bot usage\n\t/help - check command list\n\t/instruction - check bot usage instruction\n\t/input_format - check input format rules\n\t/set_file - set your .txt file with matrix data\n\t/set_n - set N(matrix size) value\n\t/set_matrix - set matrix data\n\t/set_accuracy - set your accuracy\n\t/check_file - see your downloaded .txt file data\n\t/check_n - see your set N(matrix size) value\n\t/check_matrix - see your set matrix data\n\t/check_accuracy - see your set accuracy\n\t/calculate - use this command to calculate asked values\n\t/find_roots - use this command to find roots of system of linear equations || root of single equation(lab2)\n\t/set_equation - set your equation(lab2)\n\t/set_interval - set your interval(lab2)\n",
+        "input_format_message": "<b>Please respect theese input format rules:</b>\n\n<b><i>FOR FILES:</i></b>\n🔸File should be given in *.txt format.\n\n<b><i>FOR N INPUT:</i></b>\n🔸N(matrix size) must be given as integer in range[2, 20].\n\n<b><i>FOR MATRIX INPUT:</i></b>\n🔸Matrix must have N rows and N+1 columns.\n🔸<i>Matrix format example:</i>\n<pre>a_0 b_0 c_0 d_0 ...\na_1 b_1 c_1 d_1 ...\n...\na_n b_n c_n d_n ...</pre>\n"
+    },
+
+    "input_messages": {
+        "set_file_message": "<b>Send your file in .txt format:</b>\n\n<i>Please, check /input_format for correct usage</i>",
+        "set_n_message": "Choose N input option:",
+        "set_by_file_message": "<b>Which type of file do you prefer?</b>\n\n\t🔸<b><i>random.txt</i></b> - file with random data (generate it by /gen_random)\n\t🔸<b><i>your .txt file</i></b> - make sure your .txt file is set by /set_file",
+        "set_n_by_keyboard_message": "Please enter here your N in range[2, 20]:",
+        "set_matrix_message": "Choose matrix fill option:",
+        "set_matrix_by_keyboard_message": "Enter your matrix here:\n\n<i>Please, respect /input_format</i>",
+        "set_accuracy_message": "Choose accuracy input option:",
+        "set_accuracy_by_keyboard_message": "Enter here your accuracy:"
+    },
+
+    "output_messages": {
+        "check_file_output_message": "",
+        "check_matrix_output_message": "<b>Matrix wasn't set!</b>\n\n<i>Please, set matrix by /set_matrix</i>"
+    },
+
+    "option_messages": {
+        "by_file_message": "By file",
+        "by_keyboard_message": "By keyboard",
+        "by_random_file_message": "From random.txt file",
+        "by_user_file_message": "From my .txt file"
+    },
+
+    "success_messages": {
+        "set_file_success_message": "🟢 <b>File was set successfully!</b>\n\n<i>You can check it by /check_file</i>",
+        "set_n_success_message": "🟢 <b>N was set successfully!</b>\n\n<i>You can check it by /check_n</i>\n\n<i>Now you can /set_matrix</i>",
+        "gen_random_success_message": "🟢 <b>File random.txt was generated successfully!</b>\n\n<i>Now you can use it in /set_n and /set_matrix</i>",
+        "set_matrix_success_message": "🟢 <b>Matrix was set successfully!</b>\n\n<i>You can check it by /check_matrix</i>",
+        "set_accuracy_success_message": "🟢 <b>Accuracy was set successfully!</b>\n\n<i>You can check it by /check_accuracy</i>"
+    },
+
+    "warning_messages": {
+        "set_n_warning_message": "🟡 <b>Warning!</b>\n\n<i>N must be in range[2, 20]</i>",
+        "set_random_warning_message": "🟡 <b>Warning! File not found.</b>\n\n<i>Please, generate random.txt by /gen_random</i>",
+        "set_user_file_warning_message": "🟡 <b>Warning! File wasn't downloaded.</b>\n\n<i>Please, download your .txt file by /set_file</i>",
+        "check_file_warning_message": "🟡 <b>Warning! File wasn't download.</b>\n\n<i>Please, set file by /set_file</i>",
+        "set_matrix_warning_message": "🟡 <b>Warning! N wasn't set!</b>\n\n<i>Please, set N by /set_n first</i>",
+        "set_matrix_wrong_n_warning_message": "🟡 <b>Warning! Your matrix N value doesn't equal current N value</b>\n\n<i>Please, set another N by /set_n or provide another matrix</i>",
+        "missing_matrix_warning_message": "🟡 <b>Warning! Your matrix isn't set.</b>\n\n<i>Please, set matrix by /set_matrix</i>",
+        "missing_accuracy_warning_message": "🟡 <b>Warning! Your accuracy isn't set.</b>\n\n<i>Please, set accuracy by /set_accuracy</i>",
+        "non_diag_matrix_warning_message": "🟡 <b>Warning! Diagonal dominance cannot be achieved.</b>\n\n<i>Try another matrix...</i>"
+    },
+
+    "error_messages": {
+        "general_error_message": "🔴 <b>Error occured!</b>\n\n<i>Sorry, please, try again later...</i>",
+        "gen_random_error_message": "🔴 <b>Error with random.txt occured!</b>\n\n<i>Sorry, please, try again later...</i>",
+        "set_n_by_keyboard_error_message": "🔴 <b>Error with N input occured!</b>\n\n<i>N must be an integer!</i>",
+        "set_accuracy_error_message": "🔴 <b>Error with accuracy input occured!</b>\n\n<i>Accuracy must be a float number!</i>"
+    }
+}
