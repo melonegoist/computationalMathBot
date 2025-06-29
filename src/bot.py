@@ -96,13 +96,6 @@ processor = ai_tools.MathFunctionProcessor()
 
 
 #------functions-------------
-#TODO: complete
-def make_reply_markup(button_list: list):
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
-
-    for button in button_list:
-        markup.add(types.KeyboardButton(""))
-
 
 def send_analyze(message: types.Message, equation: str, interval: tuple, result):
     desc, graph, audio = processor.process_function(equation)
